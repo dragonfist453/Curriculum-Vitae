@@ -1,0 +1,125 @@
+\documentclass[11pt,a4paper,roman]{moderncv}
+\moderncvstyle{banking}
+\moderncvcolor{black}
+\nopagenumbers{}
+\usepackage[utf8]{inputenc}
+\usepackage{fontawesome}
+\usepackage{fontspec}
+\usepackage{tabularx}
+\usepackage{ragged2e}
+\usepackage[scale=0.8]{geometry}
+\usepackage{multicol}
+
+\name{Ambu}{Karthik}
+\address{No. 492-B, F-02, Adithya Park View Apartments, HMT Layout, Nagasandra Post}{Bengaluru, Karnataka}{}
+  
+\newcommand*{\customcventry}[7][.25em]{
+  \begin{tabular}{@{}l} 
+    {\bfseries #4}
+  \end{tabular}
+  \hfill% move it to the right
+  \begin{tabular}{l@{}}
+     {\bfseries #5}
+  \end{tabular} \\
+  \begin{tabular}{@{}l} 
+    {\itshape #3}
+  \end{tabular}
+  \hfill% move it to the right
+  \begin{tabular}{l@{}}
+     {\itshape #2}
+  \end{tabular}
+  \ifx&#7&%
+  \else{\\%
+    \begin{minipage}{\maincolumnwidth}%
+      \small#7%
+    \end{minipage}}\fi%
+  \par\addvspace{#1}}
+
+\newcommand*{\customcvproject}[4][.25em]{
+%   \vfill\noindent
+  \begin{tabular}{@{}l} 
+    {\bfseries #2}
+  \end{tabular}
+  \hfill% move it to the right
+  \begin{tabular}{l@{}}
+     {\itshape #3}
+  \end{tabular}
+  \ifx&#4&%
+  \else{\\%
+    \begin{minipage}{\maincolumnwidth}%
+      \small#4%
+    \end{minipage}}\fi%
+  \par\addvspace{#1}}
+
+\setlength{\tabcolsep}{12pt}
+
+\begin{document}
+\makecvtitle
+\vspace*{-23mm}
+
+\begin{center}
+\begin{tabular}{ c c c c }
+ \faLinkedin\enspace \href{https://www.linkedin.com/in/ambu-karthik-365b3510b/}{Ambu Karthik} & \faEnvelopeO\enspace ambukarthik.cs18@rvce.edu.in & \faGithub\enspace \href{https://github.com/dragonfist453}{dragonfist453} & \faMobile\enspace +91 6363706599\\  
+\end{tabular}
+\end{center}
+
+\section{SUMMARY}
+An enthusiastic and energetic person who is always curious behind the technologies that run our world. Always eager to learn and understand how things are working. I am greatly interested in Data science, Robotics and Automation, and have worked in those fields as well.  
+
+\section{SKILLS}
+
+\setlength{\columnsep}{-0.2in}
+  \begin{multicols}{3}
+    \begin{itemize}
+        \item C
+        \item C++
+        \item Python
+        \item Java
+        \item OOPs
+        \item Data Structures
+        \item Algorithms design
+        \item Robotics
+        \item Machine learning
+        \item Deep learning
+        \item Image processing
+        \item Web Development
+    \end{itemize}
+  \end{multicols}
+
+
+
+\section{EDUCATION}
+{\customcventry{August 2018 - Present}{B.E. in Computer Science and Engineering}{R.V. College of Engineering}{Bengaluru, KA}{}{}} 
+
+{\customcventry{March 2018}{CBSE Class XII, 95.6\%}{Kendriya Vidyalaya IISc.}{Bengaluru, KA}{}{}}
+
+\section{EXPERIENCE}
+
+{\customcventry{Sept 2018 - Present}{Subsystem Head - Autonomous}{Team Astra Robotics}{Bengaluru, KA}{}
+{\begin{itemize}
+  \item Developed an interface to control a robot over a local network using a simple PS4 controller connected to the base station computer
+  \item Developed a user interface to analyse various values of a rover as it traversed the field in the competition IRC 2020
+  \item Wrote bash and python scripts to autonomously control the rover with an initial signal as per IRC 2020 rules
+  \item Developed various robots using many open source boards like Arduino and Raspberry Pi by integrating computer vision for autonomous decisions
+\end{itemize}}}
+
+{\customcventry{June 2019 - Sept 2019}{Research Intern}{Centre for Society and Policy, Indian Institute of Science}{Bengaluru, KA}{}
+{\begin{itemize}
+  \item Developed a simple user interface using iPython to analyse various dependency results on  the provided dataset to draw inferences
+  \item Analysed given data using various machine learning metrics to predict future outcomes according to the data collected
+  \item Contributed to research by analysing survey data which was collected for a research project aimed towards saving the cauvery river basin in Kodagu district, Karnataka
+\end{itemize}}}
+\pagebreak
+\section{PROJECTS}
+
+{\customcvproject{Implementation of GANs in HPCC Systems using GNN Bundle}{Jan - July, 2020}
+{\begin{itemize}
+  \item Developed an interface to use various GAN models on HPCC Systems, a distributed computing cluster for increased speed in training of the models
+  \item Designed a module on the HPCC Systems for users to conveniently use GAN without building the architecture for it
+  \item Added a support module to the GNN bundle to convert images into tensors in the language ECL for convenience of users in training neural networks with image data
+  \item Designed an architecture for GANs to run on HPCC Systems by understanding the working of GANs
+\end{itemize}
+}
+}
+
+\end{document}
